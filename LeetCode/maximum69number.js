@@ -25,7 +25,6 @@
 // Output: 9999
 // Explanation: It is better not to apply any change.
  
-
 // Constraints:
 
 // 1 <= num <= 10^4
