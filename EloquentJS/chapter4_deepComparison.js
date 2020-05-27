@@ -22,7 +22,7 @@
 deepEqual = (v1, v2) => {
     if (v1 === v2) return true
     
-    if (v1 == null || typeof v1 != "object" || v2 == null || typeof v2 != "object") return false
+    if (v1 == null || v2 == null || typeof v1 != "object" ||  typeof v2 != "object") return false
     
     let v1keys = Object.keys(v1)
     let v2keys = Object.keys(v2)
