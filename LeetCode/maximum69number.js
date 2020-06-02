@@ -36,6 +36,8 @@
 // Hint 2:
 // Brute force on every digit to get the maximum number.
 
+// Related Topics: Math
+
 // Runtime: 48 ms / Memory: 34 MB
 
 const maximum69Number = num => {

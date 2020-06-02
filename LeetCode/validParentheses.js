@@ -53,6 +53,8 @@
 // Hint 3:
 // The stack data structure can come in handy here in representing this recursive structure of the problem. We can't really process this from the inside out because we don't have an idea about the overall structure. But, the stack can help us process this recursively i.e. from outside to inwards.
 
+// Related Topics: String, Stack
+
 // Runtime: 68 ms / Memory: 37 MB
 
 isValid = s => {

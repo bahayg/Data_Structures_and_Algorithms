@@ -27,6 +27,8 @@
 // Hint 2:
 // Iterate through the hash map and check if there is a repeated value.
 
+// Related Topics: Hash Table
+
 // Runtime: 56 ms / Memory: 34.4 MB
 
 const uniqueOccurrences = arr => {

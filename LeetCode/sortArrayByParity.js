@@ -13,6 +13,8 @@
 // 1 <= A.length <= 5000
 // 0 <= A[i] <= 5000
 
+// Related Topics: Array
+
 // Runtime: 80 ms / Memory: 37.4 MB
 
 const sortArrayByParity = arr => {

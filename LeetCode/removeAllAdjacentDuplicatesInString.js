@@ -19,6 +19,8 @@
 // Hint:
 // Use a stack to process everything greedily.
 
+// Related Topics: Stack
+
 // Runtime: 80 ms / Memory: 45.2 MB
 
 removeDuplicates = (S) => {

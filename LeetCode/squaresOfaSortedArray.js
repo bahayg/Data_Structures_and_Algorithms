@@ -16,6 +16,8 @@
 // -10000 <= A[i] <= 10000
 // A is sorted in non-decreasing order.
 
+// Related Topics: Array, Two Pointers
+
 // Runtime: 216 ms / Memory: 43.7 MB (error in runtime!)
 
 sortedSquares = arr => {
