@@ -113,18 +113,18 @@ isValid = s =>  {
 
 // For my blog post:
 
-"" returns true
-"()" returns true
-"()[]{}" returns true
-"(]" returns false
-"([)]" returns false
-"{[]}" returns true
+// "" returns true
+// "()" returns true
+// "()[]{}" returns true
+// "(]" returns false
+// "([)]" returns false
+// "{[]}" returns true
 
 
 
 
 
-"({{(([[((({ Make sure that I am balanced! ]))))}}]}}]"
+// "({{(([[((({ Make sure that I am balanced! ]))))}}]}}]"
 
 
 
