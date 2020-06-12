@@ -16,21 +16,21 @@
 
 // My/EJS's Solution:
 
-class Vec {
-    constructor (x, y) {
-        this.x = x;
-        this.y = y;
-    }
+// class Vec {
+//     constructor (x, y) {
+//         this.x = x;
+//         this.y = y;
+//     }
     
-    plus(vec2) {
-        return new Vec(this.x + vec2.x, this.y + vec2.y)
-    }
+//     plus(vec2) {
+//         return new Vec(this.x + vec2.x, this.y + vec2.y)
+//     }
 
-    minus(vec2) {
-        return new Vec(this.x - vec2.x, this.y - vec2.y)
-    }
+//     minus(vec2) {
+//         return new Vec(this.x - vec2.x, this.y - vec2.y)
+//     }
 
-    get length {
-        return Math.sqrt(this.x * this.x + this.y * this.y)
-    }
-}
+//     get length {
+//         return Math.sqrt(this.x * this.x + this.y * this.y)
+//     }
+// }
