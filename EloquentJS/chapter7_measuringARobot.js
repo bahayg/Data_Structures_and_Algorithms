@@ -129,6 +129,8 @@ var roads = [
     }
     return {direction: route[0], memory: route.slice(1)};
   }
+
+//   Solution of the exercise
   
   function countSteps(state, robot, memory) {
     for (let steps = 0;; steps++) {
