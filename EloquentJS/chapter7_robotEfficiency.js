@@ -6,7 +6,7 @@
 // One possible solution would be to compute routes for all packages and then take the shortest one. Even better results can be obtained, if there are multiple shortest routes, by preferring the ones that go to pick up a package instead of delivering a package.
 
 
-// EJS's Solution:
+// EJS's Solution: (Not complete, codes from previous exercises need to be attached in front)
 
 function lazyRobot({place, parcels}, route) {
     if (route.length == 0) {
