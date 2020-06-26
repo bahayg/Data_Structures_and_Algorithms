@@ -44,3 +44,29 @@ kLengthApart = (nums, k) => {
     return true
 }
 
+// Runtime: 80 ms / Memory: 43 MB
+
+kLengthApart = (nums, k) => {
+    let count = k
+    for (i = 0; i < nums.length; i ++) {
+      if (nums[i] === 1 && count < k) return false
+      nums[i] !== 1 ? count ++ : count = 0
+    }
+    return true
+}
+
+// Ruby / Runtime: 80 ms / Memory: 14.6 MB
+
+// def k_length_apart(nums, k)
+//   count = k
+//   nums.each do |num|
+//       if num == 0 
+//         count += 1 
+//       elsif (num == 1 && count >= k)
+//         count = 0 
+//       else
+//         return false
+//       end
+//   end
+//   return true
+// end
