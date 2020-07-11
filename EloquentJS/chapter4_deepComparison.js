@@ -27,7 +27,7 @@ deepEqual = (v1, v2) => {
     let v1keys = Object.keys(v1)
     let v2keys = Object.keys(v2)
     
-    if (v1keys.lenght != v2keys.lenght) return false
+    if (v1keys.length != v2keys.length) return false
     
     for (let key of v1keys) {
       if (!v2keys.includes(key) || !deepEqual(v1[key], v2[key])) return false
