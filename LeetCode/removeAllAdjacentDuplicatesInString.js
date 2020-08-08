@@ -24,23 +24,23 @@
 // Runtime: 80 ms / Memory: 45.2 MB
 
 removeDuplicates = (S) => {
-    let stck = []
+    let stack = []
     for (let i = 0; i < S.length; i ++) {
-      if (S[i] == stck[stck.length -1]) {
-        stck.pop()
+      if (S[i] == stack[stack.length -1]) {
+        stack.pop()
       } else {
-        stck.push(S[i])
+        stack.push(S[i])
       }
     }
-    return stck.join("")
+    return stack.join("")
 }
 
 // Ruby / Runtime: 84 ms / Memory: 11.2 MB
 
 // def remove_duplicates(s)
-//   stck = []
+//   stack = []
 //   s.each_char do |item|
-//     item == stck[-1] ? stck.pop : stck.push(item) 
+//     item == stack[-1] ? stack.pop : stack.push(item) 
 //   end
-//   stck.join
+//   stack.join
 // end

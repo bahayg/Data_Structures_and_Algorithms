@@ -27,6 +27,30 @@ const sortArrayByParity = arr => {
       return result = even.concat(odd)
 }
 
+const sortArrayByParity = arr => {
+  let j = 0;
+  for (let i = 0; i < arr.length; i ++) {
+    if (arr[i]%2==0) {
+      let temp = arr[j]
+      arr[j] = arr[i];
+      arr[i] = temp;
+      j++;
+    }
+  }
+  return arr
+}
+
+const sortArrayByParity = arr => {
+  let j = 0;
+  for (let i = 0; i < arr.length; i ++) {
+    if (arr[i]%2==0) {
+      [arr[j], arr[i]] = [arr[i], arr[j]];
+      j++;
+    }
+  }
+  return arr
+}
+
 // Runtime: 80 ms / Memory: 36.9 MB
 
 const sortArrayByParity = arr => {
