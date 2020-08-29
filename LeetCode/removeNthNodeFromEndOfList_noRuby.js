@@ -27,3 +27,23 @@ removeNthFromEnd = (head, n) => {
     arr[0] ? arr[0].next = arr[1].next : head = arr[1].next
     return head
 }
+
+// Jean's version:
+
+// var removeNthFromEnd = function(head, n) {
+//     let q = new Array(n+1), current = head
+//     while (current) {
+//         q.push(current)
+//         q.shift()
+//         current = current.next
+//     }
+//     q[0] ? q[0].next = q[1].next : head = q[1].next
+//     return head
+// }
+
+    // if (q[0]) {
+    //     q[0].next = q[1].next
+    //     return head
+    // } else {
+    //     return q[1].next
+    // }
