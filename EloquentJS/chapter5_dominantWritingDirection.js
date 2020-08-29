@@ -23,4 +23,3 @@ function dominantDirection(text) {
   
     return counted.reduce((a, b) => a.count > b.count ? a : b).name;
 }
-

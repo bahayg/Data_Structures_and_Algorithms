@@ -153,3 +153,4 @@ var roads = [
   }
   
   compareRobots(routeRobot, [], goalOrientedRobot, []);
+  

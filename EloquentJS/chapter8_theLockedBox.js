@@ -90,3 +90,4 @@ const box = {
   
   console.log(box.locked);
   // → true
+  

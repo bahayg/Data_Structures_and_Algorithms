@@ -67,3 +67,4 @@ arrayToList = arr => {
       return nth(list.rest, num - 1)
     }
   }
+  
