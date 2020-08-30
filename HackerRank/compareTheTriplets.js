@@ -66,7 +66,6 @@
 // 2 1
 
 // Explanation 1
-
 // Comparing the 0th elements, 17<99 so Bob receives a point.
 // Comparing the 1st and 2nd elements, 28>16 and 30>8 so Alice receives two points.
 // The return array is [2,1].
