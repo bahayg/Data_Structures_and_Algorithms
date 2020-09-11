@@ -18,6 +18,7 @@ var firstUniqChar = function(s) {
     let hash = {}
     for(let i in s){
         hash[s[i]] = (hash[s[i]] || 0) + 1
+        // hash[s[i]] = ++ hash[s[i]] || 1;
     }
     for (let i = 0; i < s.length; i ++) {
         if (hash[s[i]] === 1)
