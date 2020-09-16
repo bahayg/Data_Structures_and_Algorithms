@@ -26,7 +26,7 @@
 // Sample Output
 // 3
 
-// My solution:
+// My solution #1:
 function sockMerchant(n, ar) {
     let socks = {}
     for (let i = 0; i < ar.length; i++) {
@@ -36,6 +36,19 @@ function sockMerchant(n, ar) {
     let colors = Object.keys(socks)
     for (let i in colors) {
         pairs += Math.floor(socks[colors[i]] / 2)
+    }
+    return pairs
+}
+
+// My solution #2:
+function sockMerchant(n, ar) {
+    let socks = {}
+    for (let i = 0; i < ar.length; i++) {
+        socks[ar[i]] ? socks[ar[i]] ++ : socks[ar[i]] = 1
+    }
+    let pairs = 0
+    for (let key in socks) {
+        pairs += Math.floor(socks[key] / 2)
     }
     return pairs
 }
