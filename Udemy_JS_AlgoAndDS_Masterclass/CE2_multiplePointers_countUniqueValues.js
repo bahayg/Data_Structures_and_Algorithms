@@ -2,7 +2,10 @@
 // There can be negative numbers in the array, but it will always be sorted. 
 
 // Time Complexity - O(n)
-// Space Complexity - O(1)
+
+// Space Complexity - O(n)
+
+// Bonus: You must do this with constant or O(1) space and O(n) time. 
 
 // My solution:
 function countUniqueValues(arr){
@@ -34,4 +37,5 @@ function countUniqueValues(arr){
     }
     return i + 1;
 }
-countUniqueValues([1,2,2,5,7,7,99])
+
+countUniqueValues([1,2,2,5,7,7,99]) // 5
