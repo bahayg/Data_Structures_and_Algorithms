@@ -2,16 +2,16 @@
 // The function should return the power of the base to the exponent. 
 // This function should mimic the functionality of Math.pow() - do not worry about negative bases and exponents. 
 
-// My solution
+// My solution:
 function power(base, exp){
     if (exp === 0) return 1
     while (exp > 0) {
         return base * power(base, (exp-1))
     }
- }
+}
 
- // Colt Steele's Solution:
- function power(base, exponent){
+// Colt Steele's Solution:
+function power(base, exponent){
     if(exponent === 0) return 1;
     return base * power(base,exponent-1);
 }
