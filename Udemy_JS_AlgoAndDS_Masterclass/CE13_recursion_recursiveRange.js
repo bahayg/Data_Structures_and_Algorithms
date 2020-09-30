@@ -12,4 +12,4 @@ function recursiveRange(x){
     return x + recursiveRange(x-1);
 }
 
- recursiveRange(6) // 21
+recursiveRange(6) // 21

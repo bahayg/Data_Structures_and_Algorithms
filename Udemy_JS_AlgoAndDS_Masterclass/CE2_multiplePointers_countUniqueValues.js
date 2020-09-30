@@ -23,7 +23,7 @@ function countUniqueValues(arr){
         }
     }
     return i + 1
-  }
+}
 
 //   Colt Steele's Solution:
 function countUniqueValues(arr){

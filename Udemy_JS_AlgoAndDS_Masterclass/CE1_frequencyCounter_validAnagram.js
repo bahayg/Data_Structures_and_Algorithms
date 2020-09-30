@@ -23,10 +23,10 @@ function validAnagram(s1, s2){
         }
     }
     return true
-  } 
+} 
 
-  //   Colt Steele's Solution:
-  function validAnagram(first, second) {
+//  Colt Steele's Solution:
+function validAnagram(first, second) {
     if (first.length !== second.length) {
       return false;
     }
@@ -51,7 +51,7 @@ function validAnagram(s1, s2){
     }
   
     return true;
-  }
+}
   
-  // {a: 0, n: 0, g: 0, r: 0, m: 0,s:1}
-  validAnagram('anagrams', 'nagaramm') // false
+// {a: 0, n: 0, g: 0, r: 0, m: 0,s:1}
+validAnagram('anagrams', 'nagaramm') // false

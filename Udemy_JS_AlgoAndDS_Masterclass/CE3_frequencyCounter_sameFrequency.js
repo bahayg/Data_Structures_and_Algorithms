@@ -20,7 +20,7 @@ function sameFrequency(n1, n2){
         else hash[i] --
     }
     return true
-  }
+}
 
 //   Colt Steele's Solution:
 function sameFrequency(num1, num2){
@@ -44,6 +44,6 @@ function sameFrequency(num1, num2){
     }
    
     return true;
-  }
+}
 
-  sameFrequency(182, 281) // true
+sameFrequency(182, 281) // true
