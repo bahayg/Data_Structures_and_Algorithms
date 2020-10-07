@@ -20,5 +20,30 @@ for (let i = 0; i < codes.length; i++) {
     // console.log(codesNew)
 }
 
+// After I submitted :(
+    const vanityNumber = (codes, numbers) => {
+        let hashMap = {
+            'A': '2', 'B': '2', 'C': '2', 'D': '3', 'E': '3', 'F': '3', 'G': '4', 'H': '4', 'I': '4', 'J': '5', 'K': '5', 'L': '5', 'M': '6', 'N': '6', 'O': '6', 'P': '7', 'Q': '7', 'R': '7', 'S': '7', 'T': '8', 'U': '8', 'V': '8', 'W': '9', 'X': '9', 'Y': '9', 'Z': '9'
+        }
+        let codesConverted = []
+        for (let i = 0; i < codes.length; i++) {
+          let codesNew = []
+          for (let j = 0; j < codes[i].length; j++) {
+            codesNew.push(hashMap[codes[i][j]])
+          }
+          codesConverted.push(codesNew.join(''))
+        }
+        let result = []
+        for (let i = 0; i < codesConverted.length; i++) {
+            for (let j = 0; j < numbers.length; j++) {
+              if (numbers[j].includes(codesConverted[i])) result.push(numbers[j])
+            }
+        }
+        return result
+      }
+      
+      vanityNumber(['TWLO', 'CODE', 'HTCH'], ['+17474824380', '+14157088956', '+919810155555', '+15109926333','+1415123456'])
+    //   [ '+14157088956', '+15109926333', '+17474824380' ]
+
 // 2: SMS Splitting
 // Given an input string of arbitrary length, output SMS-compliant segments with suffixes. 
