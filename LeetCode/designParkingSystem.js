@@ -30,7 +30,6 @@
 // Related Topics: Design
 
 // Runtime: 156 ms / Memory: 46 MB
-
 var ParkingSystem = function(big, medium, small) {
     this.count = [null, big, medium, small]
 };
