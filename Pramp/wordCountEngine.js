@@ -215,3 +215,21 @@ function wordCountEngine(document) {
   // item is the key
   return sortDoc.map((item) => [item, hash[item][0].toString()]);
 }
+
+// Another try with Map (Sean suggested), Passed: 2 Failed: 4
+// function wordCountEngine(document) {
+//   let newDoc = document
+//     .toLowerCase()
+//     .replace(/[^a-zA-Z ]/g, "")
+//     .split(" ");
+//   let map = new Map();
+//   for (let i of newDoc) {
+//     map.set(i, (map.get(i) || 0) + 1);
+//   }
+//   let sort = [...map.keys()].sort((a, b) => {
+//     if (map.get(a) > map.get(b)) return -1;
+//     else if (map.get(a) < map.get(b)) return 1;
+//   });
+//   sort = sort.map((el) => [el, map.get(el).toString()]);
+//   return sort.map((key) => key);
+// }
