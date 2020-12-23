@@ -113,3 +113,17 @@ function findGrantsCap(grantsArray, newBudget) {
     }
   }
 }
+
+// My last attempt: Time: 203 Passed: 4 Failed: 2
+function findGrantsCap(grantsArray, newBudget) {
+  let averageBudget = newBudget / grantsArray.length;
+  let sum = 0;
+  let count = 0;
+  for (i of grantsArray) {
+    if (i < averageBudget) {
+      sum += i;
+      count++;
+    }
+  }
+  return (newBudget - sum) / (grantsArray.length - count);
+}
