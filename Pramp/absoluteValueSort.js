@@ -76,3 +76,14 @@ function absSort(arr) {
   }
   return newArr;
 }
+
+// Jack's Solution; Time: 241ms Passed: 9 Failed: 0
+function absSort(arr) {
+  return arr.sort((a, b) => {
+    if (Math.abs(a) < Math.abs(b)) return -1;
+    if (Math.abs(a) > Math.abs(b)) return 1;
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+  });
+}
