@@ -14,7 +14,7 @@
 
 // Related Topics: Array / Sort
 
-// Runtime: 95.74 ms / Memory: 89.63 MB
+// Runtime: 100 ms / Memory: 43.8 MB
 
 var sortArrayByParityII = function (A) {
   let i = 0,
